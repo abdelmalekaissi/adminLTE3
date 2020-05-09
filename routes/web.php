@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/bienvenue', 'BienvenueController@bienvenue'); 
+Route::get('/', 'DashboardController@index'); 
+Route::post('/rpiauth', 'RPI_AuthController@connect'); //Routing the tasks for a specified projects.

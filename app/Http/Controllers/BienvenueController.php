@@ -9,6 +9,6 @@ class BienvenueController extends Controller
     
     public function bienvenue()
     {
-        return view('/bienvenue');
+        return view('\auth\mylogin');
     }
 }
